@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/jqm-demos.css">
+<script src="js/jquery.min.js"></script>
+<script src="_assets/js/index.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/core.js"></script>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<title>Cleinman Members Area</title>
+</head>
+<body>
+<div data-role="page" class="jqm-demos jqm-home">
+  <div data-role="header" class="jqm-header">
+    <h2><img src="images/logo.png" alt="Cleinman Members Area"></h2>
+    <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a> <a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a> </div>
+  <div role="main" class="ui-content jqm-content">
+    <div class="app">
+      <h1>Welcome!</h1>
+      <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Ready to play!</p>
+      </div>
+      <button class="test-button xml">XML test</button>
+      <button class="test-button json">JSON test</button>
+      <button class="test-button chart">Chart test</button>
+      <ul id="dynamic">
+      </ul>
+      
+      <div id="main_chart_container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+
+      
+    </div>
+  </div>
+  <!-- end content -->
+  <div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+    <ul data-role="listview" data-theme="a" data-divider-theme="d" data-icon="false" data-global-nav="demos" class="jqm-list">
+      <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d">
+        <h3>Main Menu</h3>
+      </li>
+      <li data-icon="home" data-iconpos="left"><a href="pg_home.php"  id="home_link" date-ajax="false" target="_self">Home</a></li>
+      <li><a href="pg_about.php"  id="about_link" date-ajax="false" target="_self">About</a></li>
+      <li><a href="pg_contact.php"  id="contact_link" date-ajax="false" target="_self">Contact</a></li>
+      <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d right-divider">&nbsp;</li>
+      <li data-theme="b"><a href="#"  id="logout_link" date-ajax="false" target="_self">Logout</a></li>
+    </ul>
+  </div>
+  <!-- end left panel-->
+  <div data-role="panel" id="settings" data-position="right" data-display="overlay" data-theme="a" class="jqm-search-panel ui-panel ui-panel-position-right ui-body-b ui-panel-animate ui-panel-open">
+    <div class="ui-panel-inner bm-logo-panel"> 
+      
+      <!-- BM logo to go here? Maybe?--> 
+    </div>
+    <ul data-role="listview" data-theme="a" data-divider-theme="d" data-icon="false"  class="right-nav">
+    </ul>
+  </div>
+  <!-- end right panel--> 
+  
+</div>
+<script type="text/javascript" src="cordova.js"></script> 
+<script type="text/javascript" src="js/index.js"></script> 
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-3d.js"></script>
+<script src="js/modules/exporting.js"></script>
+<script type="text/javascript">
+            app.initialize();
+        </script>
+</body>
+</html>
